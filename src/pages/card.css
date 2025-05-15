@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  font-family:"Josefin Sans", sans-serif;
+}
+.cardbody {
+  background-color: #808181;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.content {
+  width: 48rem;
+  height: 27.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.uppercontent {
+  flex-direction: column;
+  justify-content: center;
+  height: 7rem;
+  width: 48rem;
+  background-color: #d7d7d6;
+}
+.lowercontent {
+  margin: 10px;
+  width: 48rem;
+  height: 100%;
+  background-color: white;
+}
+.test {
+  margin: 10px;
+  width: 100px;
+}
+.menuimage {
+  width: 15px;
+  height: 100px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.description {
+  color: grey;
+  font-weight: bold;
+  margin-top: 65px;
+  margin-left: 7px;
+  width: 100%;
+  font-size: 22px;
+}
+.tittle {
+  margin-left: 20px;
+  max-width: 25%;
+  max-height: 25%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  height: 0px;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.circle1 {
+  margin-top: 10px;
+  height: 25px;
+  width: 25px;
+  margin-left: 32px;
+}
+.circle2 {
+  margin-top: 10px;
+  height: 25px;
+  width: 25px;
+  margin-left: 60px;
+}
+.circle3 {
+  margin-top: 10px;
+  height: 25px;
+  width: 25px;
+  margin-left: 60px;
+}
+.icons img {
+  margin: 0 5px;
+  margin-left: 10px;
+}
+.lowercontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.violetimage {
+  width:100%;
+  height: 57%;
+  padding-left: 27px;
+  padding-top: 40px;
+}
+.about {
+  width: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.descriptionprofile {
+  margin-left: 30px;
+  color: black;
+  justify-content: center;
+}
+.profile{
+  margin-right: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flowers{
+  width:100%;
+  height: 60%;
+  padding-top: 40px;
+}
+.details{
+  color: black;
+}
+.giantittle{
+  color: gray;
+  margin-left: 50%;
+  margin-top: 20px;
+  font-size: 70px;
+}
+.detailsttitle{
+  display: flex;
+  flex-direction: row;
+  height: 0px;
+  margin-left: 18px;
+  margin-top: -20px;
+}
+.socials{
+  margin-top: 50px;
+}
+.tittlesocials{
+  color: black;
+  font-size: 7px;
+  margin: 20px
+
+}
+.socialicons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ig, .steam{
+  margin-top: 10px;
+  height: 25px;
+  width: 25px;
+  margin-left: 60px;
+}
+.socialicons img{
+    margin: 0 05px;
+
+}
+.line{
+  width: 110px;
+  margin-bottom: -10%;
+}
+.citytittle{
+  font-size: 24;
+  color: black;
+}
+.userstatus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
