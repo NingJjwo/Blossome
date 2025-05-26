@@ -1,176 +1,348 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-*{
-  font-family:"Josefin Sans", sans-serif;
+
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
+
+
 .cardbody {
   background-color: #808181;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding: 1rem;
 }
+
+
 .content {
-  width: 48rem;
-  height: 27.6rem;
+  width: 100%;
+  max-width: 48rem;
+  min-height: 27.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
+  gap: 1rem; 
 }
+
+
 .uppercontent {
   flex-direction: column;
   justify-content: center;
-  height: 7rem;
-  width: 48rem;
-  background-color: #d7d7d6;
-}
-.lowercontent {
-  margin: 10px;
-  width: 48rem;
-  height: 100%;
-  background-color: white;
-}
-.test {
-  margin: 10px;
-  width: 100px;
-}
-.menuimage {
-  width: 15px;
-  height: 100px;
-  margin-top: 30px;
-  padding-left: 10px;
-}
-.description {
-  color: grey;
-  font-weight: bold;
-  margin-top: 65px;
-  margin-left: 7px;
+  height: auto;
+  min-height: 7rem;
   width: 100%;
-  font-size: 22px;
+  background-color: #d7d7d6;
+  padding: 1rem;
+  position: relative;
 }
-.tittle {
-  margin-left: 20px;
-  max-width: 25%;
-  max-height: 25%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .icons {
   display: flex;
   flex-direction: row;
-  height: 0px;
-  margin-left: 18px;
-  margin-top: 10px;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
-.circle1 {
-  margin-top: 10px;
-  height: 25px;
-  width: 25px;
-  margin-left: 32px;
+
+.circle1, .circle2, .circle3 {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
 }
-.circle2 {
-  margin-top: 10px;
-  height: 25px;
-  width: 25px;
-  margin-left: 60px;
+
+
+.detailsttitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
 }
-.circle3 {
-  margin-top: 10px;
-  height: 25px;
-  width: 25px;
-  margin-left: 60px;
+
+.giantittle {
+  color: gray;
+  font-size: clamp(2rem, 8vw, 4.375rem);
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  margin: 0;
+  font-weight: bold;
 }
-.icons img {
-  margin: 0 5px;
-  margin-left: 10px;
-}
-.lowercontent {
+
+
+.tittle {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 4rem;
+}
+
+.menuimage {
+  width: 15px;
+  height: auto;
+  max-height: 60px;
+  flex-shrink: 0;
+}
+
+.description {
+  color: grey;
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.375rem);
+  margin: 0;
+}
+
+
+.lowercontent {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  min-height: 27rem;
   justify-content: space-between;
+  gap: 1rem;
 }
-.violetimage {
-  width:100%;
-  height: 57%;
-  padding-left: 27px;
-  padding-top: 40px;
-}
+
+
 .about {
   width: 30%;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.descriptionprofile {
-  margin-left: 30px;
-  color: black;
-  justify-content: center;
-}
-.profile{
-  margin-right: 70px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.flowers{
-  width:100%;
-  height: 60%;
-  padding-top: 40px;
-}
-.details{
-  color: black;
-}
-.giantittle{
-  color: gray;
-  margin-left: 50%;
-  margin-top: 20px;
-  font-size: 70px;
-}
-.detailsttitle{
+  min-width: 120px;
   display: flex;
-  flex-direction: row;
-  height: 0px;
-  margin-left: 18px;
-  margin-top: -20px;
-}
-.socials{
-  margin-top: 50px;
-}
-.tittlesocials{
-  color: black;
-  font-size: 7px;
-  margin: 20px
-
-}
-.socialicons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.ig, .steam{
-  margin-top: 10px;
-  height: 25px;
-  width: 25px;
-  margin-left: 60px;
-}
-.socialicons img{
-    margin: 0 05px;
-
-}
-.line{
-  width: 110px;
-  margin-bottom: -10%;
-}
-.citytittle{
-  font-size: 24;
-  color: black;
-}
-.userstatus{
-  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.violetimage {
+  width: 100%;
+  height: auto;
+  max-height: 250px; 
+  object-fit: cover;
+}
+
+.descriptionprofile {
+  color: black;
+  text-align: center;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  margin-top: 0.5rem;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+
+.socials {
+  width: 35%;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tittlesocials {
+  color: black;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tittlesocials h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.socialicons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   justify-content: center;
+}
+
+.ig, .steam {
+  height: 30px; 
+  width: 30px;  
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ig:hover, .steam:hover {
+  transform: scale(1.1);
+}
+
+.line {
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+}
+
+.userstatus {
+  text-align: center;
+}
+
+.citytittle {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.profile {
+  width: 30%;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flowers {
+  width: 100%;
+  height: auto;
+  max-height: 250px; 
+  object-fit: cover;
+}
+
+.details {
+  color: black;
+  text-align: center;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cardbody {
+    padding: 0.5rem;
+  }
+  
+  .content {
+    margin-bottom: 1rem;
+    gap: 0.8rem;
+  }
+  
+  .uppercontent {
+    min-height: 5rem;
+    padding: 0.8rem;
+  }
+  
+  .lowercontent {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .about, .socials, .profile {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .violetimage, .flowers {
+    max-height: 180px; 
+  }
+  
+  .giantittle {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    right: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .socialicons {
+    gap: 1.5rem;
+  }
+  
+  .ig, .steam {
+    height: 28px; 
+    width: 28px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .cardbody {
+    padding: 0.25rem;
+  }
+  
+  .content {
+    gap: 0.6rem;
+  }
+  
+  .uppercontent {
+    min-height: 4rem;
+    padding: 0.5rem;
+  }
+  
+  .lowercontent {
+    padding: 0.8rem;
+    gap: 1rem;
+  }
+  
+  .circle1, .circle2, .circle3 {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .menuimage {
+    max-height: 40px;
+  }
+  
+  .ig, .steam {
+    height: 25px; 
+    width: 25px;
+  }
+  
+  .violetimage, .flowers {
+    max-height: 150px; 
+  }
+  
+  .giantittle {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    font-weight: bold;
+  }
+  
+  .about, .socials, .profile {
+    max-width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .content {
+    gap: 0.5rem;
+  }
+  
+  .uppercontent {
+    min-height: 3.5rem;
+  }
+  
+  .circle1, .circle2, .circle3 {
+    height: 12px;
+    width: 12px;
+  }
+  
+  .ig, .steam {
+    height: 22px; 
+    width: 22px;
+  }
+  
+  .violetimage, .flowers {
+    max-height: 130px; 
+  }
+  
+  .socialicons {
+    gap: 1rem;
+  }
 }
